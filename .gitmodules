@@ -1,0 +1,3 @@
+[submodule "library"]
+	path = library
+	url = https://xinfin_leewayhertz:calmwind22@bitbucket.org/leewayhertz/lhtamqpclientlibrary.git

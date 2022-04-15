@@ -1,0 +1,41 @@
+{
+  "name": "xinfin-explorer-scan-service",
+  "version": "1.0.0",
+  "description": "This is service to sync blockchain",
+  "main": "server.js",
+  "scripts": {
+    "start": "UV_THREADPOOL_SIZE=200 ./node_modules/babel-cli/bin/babel-node.js --presets  node8  --max-stack-size=32000  ./server.js",
+    "test": "UV_THREADPOOL_SIZE=200 forever ./node_modules/babel-cli/bin/babel-node.js --presets  node8  --max-stack-size=32000  ./server.js",
+    "nodemon": "UV_THREADPOOL_SIZE=200 nodemon ./node_modules/babel-cli/bin/babel-node.js --presets  node8 --max-stack-size=32000   ./server.js",
+    "temp": "UV_THREADPOOL_SIZE=200 nodemon ./node_modules/babel-cli/bin/babel-node.js --presets  node8 --max-stack-size=32000   ./app/modules/block/block.js"
+  },
+  "author": "Leewayhertz",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-node8": "^1.2.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cron-master": "^1.0.1",
+    "express": "^4.17.1",
+    "forever": "^1.0.0",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.21",
+    "moment": "^2.27.0",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.2",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "slack-notifier": "0.0.3",
+    "socket.io": "^4.1.2",
+    "web3": "^1.3.6",
+    "ws": "^7.4.5",
+    "xdc3": "^1.3.13416",
+    "yup": "^0.29.3"
+  }
+}
